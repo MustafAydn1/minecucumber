@@ -1,0 +1,20 @@
+
+String URL ="jdbc:mysql:// hostname :portname /sakila";
+
+Srtring username="technostudy";
+String password="12345"
+
+Connetion connection=DriverManager.getConnection(URL,username,password)
+
+Statement statement=connection.createStatement();
+
+ResultSet rs=statement.executeQuery("select * from Table")
+
+rs.next();
+rs.first();
+rs.absulate();
+rs.relative();
+String title=rs.getString("title")  or  rs.getString(Sayı)
+System.out.println(title);
+
+

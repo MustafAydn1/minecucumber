@@ -1,0 +1,85 @@
+POM Nedir ?
+Proje Nesnesi Modeli (Project Object Model)
+-----------------------------------------------------------
+https://www.qaautomation.co.in/2018/10/cucumber-extent-report.html
+sitesinde bunları yazıyor.
+------------------------------------------------------------
+Burak ın DataTable Mentöringine bak.Farklı bır cözum olmuş
+------------------------------------------------------------
+
+
+
+Runner Class::
+
+SYNTAX I::
+
+@CucumberOptions(
+        tags={"@RegressionTest"},                     ---------->> GRUPLANDIRMA YAPMAK İÇİN.
+        features = {"src\\test\\java\\FeatureFiles"}, ---------->> HANGİ TESTLERİN ÇALIŞMASINI İSTERSEN.
+        glue= {"StepDefinitions"},                    ---------->> SABİT OLARAK YAZILAN BÖLUM.
+        dryRun= false,                                ---------->> SABİT OLARAK YAZILAN BÖLUM.
+        plugin = {
+                "html:target/cucumber-report",        ---------->> RAPORLAMA İÇİN YAPILAN EKLENTİ
+                "json:target/cucumber.json"
+
+}
+)
+_01_TestRunner extends AbstractTestNGCucumberTests(){} --------->>extends YAPMAYI UNUTMA
+
+
+-----------------------------------------------------------------------------
+ glue(gluu)::Tutkal
+    dry Run=prova,tatbikat
+    Abstract=Öz-Özet
+    tags=Etiketlemeler
+
+-----------------------------------------------------------------------------
+driver.navigate().back(); --->>Geri gitmek için kullanılır.
+--------------------------------------------------------------------------
+backend::web sayfasinin arkasinda calisan veri tabani ve kodlar
+bır sey tavsıye edıyım arkadaslara,lınkedın de verılen ılanlarda recreuıter ların ısımlerı oluyor
+dırek onlarla baglantı kurulup eklenebılır..
+Page Object Model:: kod tekrraini azaltmak icin bir kere yazip kullanmak.Bir tur dizayn.reusable
+-----------------------------------------------------------------------------------------------
+
+API (Uygulama Programlama Arayüzü) Nedir?
+
+API, farklı uygulama yazılımlarının birbiriyle iletişim halinde olmasını sağlayan
+"Uygulama Programlama Arayüzü" anlamına gelir. Bir geliştirici, bir uygulama yazılımı oluştururken veya
+ geliştirirken API'yı kullandığında zaman ve enerji tasarrufu sağlayabilir.
+ Aynı zamanda, API kullanılarak kaynaklara kontrol erişimi ve hizmetler arasındaki iletişime erişim sağlanabilir.
+
+Neden Postman?
+
+Postman'e bir bakalım: Postman, uzun kodlara ihtiyaç duymadan API'larınızı kolayca test edebileceğiniz,
+ API'nızın dokümasyonunu hazırlamanızı sağlayan ve "rest client" olarak adlandırabileceğiniz bir araçtır.
+  Postman ayrıca Chrome için bir eklenti olarak da kullanılabilir.
+
+Postman'i Chrome'unuza bu linkten eklenti olarak ekleyebilirsiniz.
+
+----------------------------------------------------------------------------------------------
+interviewler için;;
+kendinden bahset-- projenız--freamwork unu anlat..
+dilini geliştir.. herşeyının cevabını hazırla ingilizce olarak...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SQL -> Structured Query Language -> 2 hafta
+JDBC-> Cucumber veritabanı bağlantısı yapacağız -> 3 gün
+POSTMAN -> 3 gün
+API -> 6 gün
+ek -> githup
